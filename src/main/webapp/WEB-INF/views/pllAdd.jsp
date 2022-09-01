@@ -18,6 +18,7 @@
 
 
 <h2>Add new PLL algorithm</h2>
+<%--@elvariable id="pllAlg" type="java"--%>
 <form:form method="post" modelAttribute="pllAlg">
     <p>Name: </p>
     <form:input path="pllName"></form:input><br>
@@ -26,6 +27,7 @@
     <p>Group: </p>
     <form:select path="pllGroup">
         <form:option value="0" label="---wybierz---"/>
+        <form:option value="Default"/>
         <form:option value="Edges Only"/>
         <form:option value="Diagonal Corner Swap"/>
         <form:option value="Adjacent Corner Swap"/>
